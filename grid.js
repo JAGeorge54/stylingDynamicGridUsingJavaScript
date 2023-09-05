@@ -14,13 +14,13 @@ function createGrid() {
 function move() {
   // Should increment the position variable by 1 each 100ms taking into consideration the gridSize variable value
   // This function should make use of the toggle function below to change the CSS class on a specific div element
-setTimeout(() => {
-  if (position > gridSize) return;
-  toggle(position);
-  toggle(postion - 1);
-  position += 1;
-  move();
-}, 100);
+  setTimeout(() => {
+    if (position > gridSize) return;
+    toggle(position);
+    toggle(position - 1);
+    position += 1;
+    move();
+  }, 100);
 }
 
 function toggle(position) {
