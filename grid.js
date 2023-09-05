@@ -3,6 +3,12 @@ const gridSize = 100; // The total number of the grid cells
 
 function createGrid() {
   // Should create a new Div based on the gridSize variable value and append these divs to the element with id "target"
+  for(i = 0; i < gridSize; i++){
+    let div = document.createElement('div');
+    div.id = 'd' + i;
+    div.innerText = i;
+    document.getElementById('target').appendChild(div);
+  }
 }
 
 function move() {
